@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contrate Eletricistas Profissionais</title>
+  <style>
+    /* RESET */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f8f9fa; color: #333; }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #004085;
+      color: white;
+    }
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #004085, #0069d9);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .busca {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .busca input {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 4px;
+      width: 300px;
+    }
+    .busca button {
+      padding: 0.8rem 1.2rem;
+      background: #ffc107;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .busca button:hover {
+      background: #e0a800;
+    }
+
+    /* SEÇÃO DE PROFISSIONAIS */
+    .profissionais {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .profissionais h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #004085;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    .card button {
+      background: #28a745;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background: #218838;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #343a40;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">EletricEnd
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Profissionais</a><a href="https://cadastro.html /a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Encontre Eletricistas de Confiança</h1>
+    <p>Profissionais qualificados e avaliados perto de você</p>
+    <div class="busca">
+      <input type="text" placeholder="Digite sua cidade ou serviço..." />
+      <button>Buscar</button>
+    </div>
+  </section>
+
+  <section class="profissionais">
+    <h2>Eletricistas em Destaque</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?electrician" alt="Eletricista">
+        <h3>João Silva</h3>
+        <p>Especialista em instalações residenciais e comerciais.</p>
+        <button>Solicitar Orçamento</button>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?wiring" alt="Eletricista">
+        <h3>Maria Souza</h3>
+        <p>Serviços de manutenção e reparo elétrico.</p>
+        <button>Solicitar Orçamento</button>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?electric" alt="Eletricista">
+        <h3>Carlos Pereira</h3>
+        <p>Instalações industriais e projetos elétricos.</p>
+        <button>Solicitar Orçamento</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 EletricEnd
+  </footer>
+
+</body>
+</html>
